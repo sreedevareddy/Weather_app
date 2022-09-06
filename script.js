@@ -26,7 +26,7 @@ locationBtn.addEventListener("click", () => {
 
 function requestApi(city) {
     // api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${Api_key}`;
-    api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${Api_key}`;
+    api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=${Api_key}`;
     fetchData();
 }
 
@@ -92,3 +92,4 @@ function weatherDetails(info) {
 arrowBack.addEventListener("click", () => {
     wrapper.classList.remove("active");
 });
+
