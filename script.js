@@ -26,13 +26,13 @@ locationBtn.addEventListener("click", () => {
 
 function requestApi(city) {
     // api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${Api_key}`;
-    api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=${Api_key}`;
+    api = `https://sreedevareddy.github.io/Weather_app/http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=${Api_key}`;
     fetchData();
 }
 
 function onSuccess(position) {
     const { latitude, longitude } = position.coords;
-    api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${Api_key}`;
+    api = `https://sreedevareddy.github.io/Weather_app/https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${Api_key}`;
     fetchData();
 }
 
